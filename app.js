@@ -2,13 +2,6 @@ function sumOfDifferences(arr) {
     if (arr.length <= 1) {
         return 0;
     } else {
-        // let myArr = arr;
-        // myArr.sort(function (b, a) {
-        //     return a - b;
-        // });
-        // let sumA = myArr[0] - myArr[1];
-        // let sumB = myArr[1] - myArr[2];
-        // return sumA + sumB;
         return Math.abs(Math.min(...arr) - Math.max(...arr));
     }
 }
